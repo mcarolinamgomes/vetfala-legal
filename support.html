@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | VetFala</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #334155;
+            padding: 20px; /* Added padding for mobile edges */
+            box-sizing: border-box;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 50px 40px;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            text-align: center;
+            max-width: 420px;
+            width: 100%;
+        }
+        .logo {
+            max-width: 200px;
+            height: auto;
+            margin-bottom: 30px;
+        }
+        /* Icon styled like the checkmark, but using a question mark or support symbol */
+        .icon-circle {
+            width: 60px;
+            height: 60px;
+            margin: 0 auto 20px;
+            background-color: #e6f7f6;
+            color: #1ebbb5;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            font-weight: bold;
+        }
+        h1 {
+            color: #1e293b;
+            margin-bottom: 12px;
+            font-size: 26px;
+            letter-spacing: -0.025em;
+            margin-top: 0;
+        }
+        p {
+            color: #64748b;
+            line-height: 1.6;
+            margin-bottom: 30px;
+            font-size: 16px;
+        }
+        
+        /* Form Styling to match the clean aesthetic */
+        .form-group {
+            margin-bottom: 16px;
+            text-align: left;
+        }
+        
+        label {
+            display: block;
+            font-size: 13px;
+            font-weight: 600;
+            color: #475569;
+            margin-bottom: 6px;
+            margin-left: 4px;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #cbd5e1;
+            border-radius: 10px;
+            font-size: 15px;
+            font-family: inherit;
+            color: #334155;
+            box-sizing: border-box;
+            background-color: #f8fafc;
+            transition: all 0.2s ease;
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border-color: #1ebbb5;
+            background-color: #ffffff;
+            box-shadow: 0 0 0 3px rgba(30, 187, 181, 0.15);
+        }
+
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            background-color: #1ebbb5;
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 10px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.2s;
+        }
+
+        .submit-btn:hover {
+            background-color: #179f9a;
+        }
+
+        .footer {
+            margin-top: 40px;
+            font-size: 13px;
+            color: #94a3b8;
+        }
+        
+        a {
+            color: #1ebbb5;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <img src="VetScribe%20(3).png" alt="VetFala Logo" class="logo">
+    
+    <div class="icon-circle">?</div>
+    
+    <h1>Need Help?</h1>
+    <p>Fill out the form below to contact our support team directly.</p>
+    
+    <form action="mailto:support@vetfala.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Dr. Jane Doe" required>
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="jane@clinic.com" required>
+        </div>
+
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send Email</button>
+    </form>
+
+    <div class="footer">
+        © 2025 VetFala. All rights reserved.<br>
+        <a href="mailto:support@vetfala.com">support@vetfala.com</a>
+    </div>
+</div>
+
+</body>
+</html>
