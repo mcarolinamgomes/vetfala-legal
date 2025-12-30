@@ -52,6 +52,13 @@
             border-bottom: 1px solid #f1f5f9;
             padding-bottom: 8px;
         }
+        h3 {
+            color: #334155;
+            font-size: 16px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
         p, li {
             color: #64748b;
             line-height: 1.7;
@@ -84,20 +91,6 @@
         a:hover {
             text-decoration: underline;
         }
-        .button {
-            display: inline-block;
-            background-color: #1ebbb5;
-            color: white;
-            padding: 12px 24px;
-            border-radius: 8px;
-            text-decoration: none;
-            font-weight: 600;
-            margin-top: 10px;
-        }
-        .button:hover {
-            background-color: #159c97;
-            text-decoration: none;
-        }
         .footer {
             margin-top: 60px;
             text-align: center;
@@ -117,26 +110,34 @@
         <p>Managed by Maria Gomes</p>
     </div>
 
-    <p>At <strong>VetFala (VetScribe)</strong>, we value your privacy and your right to control your personal data. If you wish to stop using our service and delete your account, you may request the permanent deletion of your data by following the steps below.</p>
-
-    <h2>How to Delete Your Account</h2>
-    <p>Because VetFala handles secure clinical data, account deletion is a permanent action. You can request deletion via email:</p>
-    
-    <ol>
-        <li>Open your email client.</li>
-        <li>Compose a new email to <strong><a href="mailto:support@vetfala.com">support@vetfala.com</a></strong>.</li>
-        <li>Use the subject line: <strong>"Request Account Deletion"</strong>.</li>
-        <li>Please send the email from the <strong>same email address</strong> you used to register your VetFala account so we can verify your identity.</li>
-    </ol>
-
-    <a href="mailto:support@vetfala.com?subject=Request Account Deletion&body=I would like to request the permanent deletion of my VetFala account and all associated data." class="button">Send Deletion Request Email</a>
+    <p>At <strong>VetFala (VetScribe)</strong>, we value your privacy and your right to control your personal data. If you wish to stop using our service and delete your account, you can do so directly within the application.</p>
 
     <div class="warning-box">
         <strong>Warning:</strong> This action is irreversible. Once your account is deleted, you will lose access to all patient histories and clinical reports generated within the app.
     </div>
 
+    <h2>Option 1: Delete via App (Recommended)</h2>
+    <p>The fastest way to delete your account and all associated data is through the mobile application settings:</p>
+    
+    <ol>
+        <li>Open the <strong>VetFala</strong> app on your device.</li>
+        <li>Navigate to the <strong>Settings</strong> tab.</li>
+        <li>Tap on <strong>Account</strong> or <strong>Profile</strong>.</li>
+        <li>Scroll down and tap the red <strong>Delete Account</strong> button.</li>
+        <li>Confirm your choice when prompted.</li>
+    </ol>
+    <p>Your data will be immediately queued for deletion.</p>
+
+    <h2>Option 2: Delete via Email Support</h2>
+    <p>If you no longer have access to the app or cannot login, you may request deletion via email:</p>
+    <ol>
+        <li>Send an email to <strong><a href="mailto:support@vetfala.com">support@vetfala.com</a></strong>.</li>
+        <li>Use the subject line: <strong>"Request Account Deletion"</strong>.</li>
+        <li>Please send the email from the <strong>same email address</strong> associated with your VetFala account so we can verify your identity.</li>
+    </ol>
+
     <h2>Data That Will Be Deleted</h2>
-    <p>When your account deletion is processed, the following data associated with your user ID will be permanently removed from our Supabase database:</p>
+    <p>When your account deletion is processed, the following data associated with your user ID will be permanently removed from our database:</p>
     <ul>
         <li><strong>Personal Information:</strong> Your email address, encrypted password, and profile settings.</li>
         <li><strong>Patient Records:</strong> All animal profiles, owner details, and medical history summaries.</li>
@@ -147,7 +148,7 @@
     <h2>Data Retention Information</h2>
     <p>While we aim to delete all data immediately upon request, please note the following retention details:</p>
     <ul>
-        <li><strong>Processing Time:</strong> Deletion requests are typically processed within 30 days in accordance with GDPR.</li>
+        <li><strong>Processing Time:</strong> In-app deletions are immediate. Email requests are typically processed within 30 days in accordance with GDPR.</li>
         <li><strong>Backups:</strong> Your data may remain in our encrypted secure backups for up to 90 days before being completely overwritten.</li>
         <li><strong>Legal Obligations:</strong> If you have generated invoices or financial documents using the billing feature, we may be required by local tax laws to retain a record of the transaction (but not the clinical details) for a specific period.</li>
     </ul>
