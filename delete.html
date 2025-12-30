@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request Account Deletion | VetFala</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f8fafc;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+            margin: 0;
+            color: #334155;
+            padding: 40px 20px;
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 60px 50px;
+            border-radius: 16px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            text-align: left;
+            max-width: 800px;
+            width: 100%;
+            box-sizing: border-box;
+            margin-bottom: 40px;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 20px;
+        }
+        .logo {
+            max-width: 180px;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: #1e293b;
+            margin-bottom: 10px;
+            font-size: 28px;
+            letter-spacing: -0.025em;
+        }
+        h2 {
+            color: #1e293b;
+            font-size: 20px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            border-bottom: 1px solid #f1f5f9;
+            padding-bottom: 8px;
+        }
+        p, li {
+            color: #64748b;
+            line-height: 1.7;
+            margin-bottom: 12px;
+            font-size: 16px;
+        }
+        ul, ol {
+            margin-bottom: 16px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        strong {
+            color: #334155;
+        }
+        .warning-box {
+            background-color: #fff1f2;
+            border-left: 4px solid #e11d48;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+            color: #be123c;
+        }
+        a {
+            color: #1ebbb5;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .button {
+            display: inline-block;
+            background-color: #1ebbb5;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+        }
+        .button:hover {
+            background-color: #159c97;
+            text-decoration: none;
+        }
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+            font-size: 13px;
+            color: #94a3b8;
+            border-top: 1px solid #e2e8f0;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="VetScribe%20(3).png" alt="VetFala Logo" class="logo">
+        <h1>Account Deletion Request</h1>
+        <p>Managed by Maria Gomes</p>
+    </div>
+
+    <p>At <strong>VetFala (VetScribe)</strong>, we value your privacy and your right to control your personal data. If you wish to stop using our service and delete your account, you may request the permanent deletion of your data by following the steps below.</p>
+
+    <h2>How to Delete Your Account</h2>
+    <p>Because VetFala handles secure clinical data, account deletion is a permanent action. You can request deletion via email:</p>
+    
+    <ol>
+        <li>Open your email client.</li>
+        <li>Compose a new email to <strong><a href="mailto:support@vetfala.com">support@vetfala.com</a></strong>.</li>
+        <li>Use the subject line: <strong>"Request Account Deletion"</strong>.</li>
+        <li>Please send the email from the <strong>same email address</strong> you used to register your VetFala account so we can verify your identity.</li>
+    </ol>
+
+    <a href="mailto:support@vetfala.com?subject=Request Account Deletion&body=I would like to request the permanent deletion of my VetFala account and all associated data." class="button">Send Deletion Request Email</a>
+
+    <div class="warning-box">
+        <strong>Warning:</strong> This action is irreversible. Once your account is deleted, you will lose access to all patient histories and clinical reports generated within the app.
+    </div>
+
+    <h2>Data That Will Be Deleted</h2>
+    <p>When your account deletion is processed, the following data associated with your user ID will be permanently removed from our Supabase database:</p>
+    <ul>
+        <li><strong>Personal Information:</strong> Your email address, encrypted password, and profile settings.</li>
+        <li><strong>Patient Records:</strong> All animal profiles, owner details, and medical history summaries.</li>
+        <li><strong>Clinical Reports:</strong> All generated PDF reports, JSON data structure of reports, and any associated text transcripts.</li>
+        <li><strong>Audio Data:</strong> Any temporary audio links or references associated with your consultations.</li>
+    </ul>
+
+    <h2>Data Retention Information</h2>
+    <p>While we aim to delete all data immediately upon request, please note the following retention details:</p>
+    <ul>
+        <li><strong>Processing Time:</strong> Deletion requests are typically processed within 30 days in accordance with GDPR.</li>
+        <li><strong>Backups:</strong> Your data may remain in our encrypted secure backups for up to 90 days before being completely overwritten.</li>
+        <li><strong>Legal Obligations:</strong> If you have generated invoices or financial documents using the billing feature, we may be required by local tax laws to retain a record of the transaction (but not the clinical details) for a specific period.</li>
+    </ul>
+
+    <div class="footer">
+        © 2025 VetFala. All rights reserved. | <a href="privacy.html">Privacy Policy</a>
+    </div>
+</div>
+
+</body>
+</html>
